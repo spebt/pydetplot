@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [{ name = "Fang Han", email = "fhan0904@gmail.com" }]
+dependencies = ["numpy", "pyyaml", "matplotlib"]
+name = "pydetplot"
+dynamic = ["version"]
+description = "SPEBT project Python package for plotting the detector configuration."
+readme = "README.md"
+requires-python = ">=3.9.6"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[tool.setuptools_scm]
+
+[project.urls]
+Homepage = "https://github.com/spebt/pydetplot/"
+Issues = "https://github.com/spebt/pydetplot/issues"
+Documentation = "https://spebt.github.io/pydetplot/"
+
+[tool.setuptools]
+include-package-data = true
+packages = ["pydetplot"]
